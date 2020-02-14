@@ -1,0 +1,7 @@
+---
+- hosts: dinesh
+  tasks:
+          - name: creating a new file
+            file:
+            dest: /home/dinesh/projects/mano
+            mode: 0666

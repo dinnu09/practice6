@@ -1,0 +1,14 @@
+---
+- hosts: dinesh
+  tasks: 
+
+
+    vars:
+
+            - name: creating users
+              users:
+              name={{ items }}
+              state=present
+              with_items:
+                      - demouser1
+                      - demouser2
